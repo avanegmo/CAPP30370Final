@@ -38,9 +38,12 @@ footer{font-size:14px; text-align:left; position:relative;}
    	@-webkit-keyframes move{100% {-webkit-transform:translate(700px, 0);}}
 
 @media only screen and (min-width:500px){
-nav li {display:inline-block;}
-nav ul{display:flex; flex-direction:row; flex-wrap:wrap;}
- 		nav li {flex:50% 1}}
+/* 	nav li {display:inline-block;} */
+/* 
+	nav ul{display:flex; flex-direction:row; flex-wrap:wrap;}
+ 		nav li {flex:25% 1}
+ */
+}
  
 @media only screen and (max-width:500px){
 	#homepic {position:relative; border:1px solid #006;border-radius:40px/ 20px; width:100%; margin-bottom:25px;}
@@ -48,22 +51,28 @@ nav ul{display:flex; flex-direction:row; flex-wrap:wrap;}
 	.wrapper h3{font-size:24px; font-weight:bold; text-decoration:underline; text-align:center;}
 	.wrapper p{font-size:16px; text-align:center}
 	.wrapper h4{text-align:center;}
+ }
  
  @media only screen and (min-width:701px){
  nav ul{display:flex; flex-direction:row; flex-wrap:wrap;}
- 		nav li {flex:1}}
+ 		nav li {flex:50% 1;}
+ }
  
  @media only screen and (max-width:700px){
 	.siteheader h1{font-size:55px; text-align:center;}
 	.siteheader h2{font-size:30px; text-align:center;}
 	.wrapper h2{font-size:36px; font-weight:bold; text-shadow:2px 2px gray;}
 	.wrapper h3{font-size:28px; font-weight:bold; text-decoration:underline;}
-	.wrapper p{font-size:16px;}}
-
+	.wrapper p{font-size:16px;}
+}
  
 @media only screen and (min-width:1000px) {
-	.vid{display:flex; flex-direction:column; flex-wrap:wrap;}
- 		.vid{flex:1;}}
+	.vid{display:flex; flex-direction:row; flex-wrap:wrap;}
+ 	.vid{flex:1;}
+ 	 nav ul{display:flex; flex-direction:row; flex-wrap:wrap;}
+ 	nav li {flex:1;}
+ }
+ 	
 
 
 /*@media only screen and (max-width:700px){
